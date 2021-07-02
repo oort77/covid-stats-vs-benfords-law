@@ -20,6 +20,11 @@ import plotly.express as px
 from scipy.stats import norm
 from fuzzywuzzy import fuzz
 
+import subprocess
+
+subprocess.run(["streamlit", "run","covid-stats-and-benford-law-v2b.py","--server.port", "8001" ])
+
+
 plt.style.use("seaborn")  # ggplot
 
 st.set_page_config(page_title="COVID statistics and Benford's Law",
